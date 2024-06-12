@@ -5,7 +5,9 @@ const app = express();
 // Change this based on your astro.config.mjs, `base` option.
 // They should match. The default value is "/".
 const base = '/';
-app.use(base, express.static('dist/home/'));
+app.use(base, express.static('dist/client/'));
 app.use(ssrHandler);
+
+const PORT = process.env.PORT || 8080
 
 app.listen(8080);
