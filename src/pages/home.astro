@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Bootstrap.astro';
+import Project from '../components/Project.astro';
+import BirdImg from '../images/3674364.jpg';
+---
+<Layout title="Code by Shelby">
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-12">
+                <h1>Code by Shelby</h1>
+            </div>
+        </div>
+
+        <div class="row maincontent">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 maincontent">
+            <p>I'm Shelby.</p>
+            <p>I build and design websites for businesses with the intent to further
+                their growth, whether established or a start-up. I create customized sites
+                for the client, customer and Search Engine alike, achieving optimal results.</p>
+            </div>
+            <div class="col-lg-2"></div>
+            </div>
+
+        <!---
+            <Project
+            imgUrl= {BirdImg.src}
+            altText="This is a cool swan pic."
+            title="Suite Skin by Lindsey"
+            body="test test enough"
+        />
+        --->
+    </main>
+</Layout>
+
+<style>
+ .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.syncopate-regular {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    .header {
+        margin-top: 10%;
+        margin-bottom: 7%;
+        font-family: "Syncopate", sans-serif;
+        letter-spacing: 20px;
+    }
+
+    .maincontent{
+        font-family: "Montserrat", sans-serif;
+        max-height: 100vh;
+    }
+
+</style>

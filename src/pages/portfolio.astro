@@ -1,0 +1,181 @@
+---
+import Layout from "../layouts/Bootstrap.astro";
+import Header from "../components/Header.astro";
+import SSBL from "../images/suiteskin-preview.jpg";
+import TA from "../images/theagenda-preview.jpg";
+import ACLC from "../images/arkcustom-preview.jpg";
+---
+
+<Layout title="Code by Shelby - Portfolio">
+    <Header subheader="Portfolio" />
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-sm-12">
+                <a href="https://github.com/shelkelly"><h4>GitHub</h4></a>
+            </div>
+        </div>
+        <hr />
+        <div class="row p-3">
+            <div class="col-sm-6 align-self-center">
+                <a href="http://www.suiteskinbylindsey.com"
+                    ><h4>Suite Skin by Lindsey</h4></a
+                >
+                <p>
+                    This website was built for marketing and branding purposes.
+                    Client wanted to have a custom built webpage and a higher
+                    search ranking on Google. This site is custom and not a
+                    builder, therefore all design and functionality is created
+                    personally with React.js, Javascript, HTML and CSS.
+                </p>
+            </div>
+            <div class="col-sm-6 align-self-center">
+                <img
+                    src={SSBL.src}
+                    class="preview img-fluid"
+                    alt="Preview image of Suite Skin by Lindsey website."
+                />
+            </div>
+        </div>
+        <hr />
+        <div class="row p-3">
+            <div class="col-sm-6 align-self-center">
+                <img
+                    src={TA.src}
+                    class="preview img-fluid"
+                    alt="Preview image of The Agenda."
+                />
+            </div>
+            <div class="col-sm-6 align-self-center">
+                <p>
+                    <a href="https://github.com/shelkelly/TheAgenda"
+                        ><h4>The Agenda</h4></a
+                    >
+                </p>
+                <p>
+                    The Agenda was created as a fun and interactive way to get
+                    my children interested in completing chores (which ended up
+                    being very dependent on personality, by the way). People are
+                    able to quickly add in things that need to be done. It helps
+                    to keep you organized and on track.
+                </p>
+                <p>
+                    Once you finish an item, it moves to a completed list. It is
+                    a nice dopamine boost to be able to see and keep track of
+                    what you have accomplished!
+                </p>
+                <p>
+                    Didn't finish your stuff from the day before? No worries,
+                    it's still there. You won't forget what you needed to do,
+                    and you can still "Complete" and "Remove" things that need
+                    to change!
+                </p>
+                <p>Built with Javascript, HTML, CSS and localStorage.</p>
+            </div>
+            <hr />
+            <div class="row p-3">
+                <div class="col-sm-6 align-self-center">
+                    <p>
+                        <a href="https://arkcustom.herokuapp.com/"
+                            ><h4>Ark Custom Laser Creations</h4></a
+                        >
+                    </p>
+                    <p>
+                        Ark Custom is a fully functional, yet unpolished
+                        E-commerce site. This website's full intention was for
+                        customers to customize their laser engravings. The
+                        clients for Ark Custom also used Quickbooks, and
+                        required an integration from that database to their
+                        e-commerce website. This was achieved, allowing the ease
+                        of keeping track of inventory and other monetary needs.
+                    </p>
+
+                    <p>
+                        Website was unable to be completed due to lack of assets
+                        required by owner. I began with back-end functionality,
+                        and design was to follow.
+                    </p>
+                    <p>
+                        Created with Javascript, HTML, CSS, Handlebars, MYSQL,
+                        Heroku, Stripe and Quickbooks.
+                    </p>
+                </div>
+                <div class="col-sm-6 align-self-center">
+                    <img
+                        src={ACLC.src}
+                        class="preview img-fluid"
+                        alt="Preview image of Ark Custom Laser Creations."
+                    />
+                </div>
+            </div>
+            <hr />
+            <div class="row p-3">
+                <div class="col-sm-12 align-self-center">
+                    <h3>Contributions</h3>
+                    <p>
+                        <a href="https://www.lifeatpraise.org/"
+                            >Life at Praise</a
+                        >
+                        <p>
+                            Contributed a 5-day daily devotional to reset on
+                            Mondays. Required daily content, and I suspect this
+                            was too taxing on the team, and is no longer
+                            functional. Implemented anonymous message board for
+                            youth, also no longer on display. Re-branded site,
+                            also changed. I had tutored their website admin, and
+                            he currently runs the site.
+                        </p>
+                        <p>
+                            All created with Wordpress, PHP, Javascript, HTML
+                            and CSS.
+                        </p>
+                    </p>
+                    <p>
+                        <a href="https://github.com/crystalcrandall92/CovidFit"
+                            >CovidFit</a>
+                    </p>
+                    <p>
+                        <a href="https://sxiong6901.github.io/FirstProject/"
+                            >Scout</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/shelkelly/Project"
+                            >Great Reads</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            letter-spacing: 2px;
+            margin: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            max-height: 100vh;
+            overflow: scroll;
+            padding-bottom: 20%;
+        }
+
+        .preview {
+            border-radius: 30px;
+        }
+
+        .container::-webkit-scrollbar {
+            opacity: 100%;
+        }
+
+        .container::-webkit-scrollbar-track {
+            opacity: 100%;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background: rgb(237, 182, 182);
+            border-radius: 10px;
+            width: 3px;
+        }
+    </style>
+</Layout>

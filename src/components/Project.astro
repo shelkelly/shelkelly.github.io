@@ -1,0 +1,34 @@
+---
+interface Props {
+    imgUrl: string;
+    title: string;
+    body: string;
+    altText: string;
+}
+
+const { imgUrl, title, body, altText } = Astro.props;
+
+---
+
+<div class="row">
+    
+    <div class="container-md projbg">
+        <h2>
+            {title}
+        </h2>
+
+        <p><img src={imgUrl} alt={altText} width="25%"></p>
+
+        <p>
+            {body}
+        </p>
+    </div>
+    
+</div>
+<style>
+        .projbg {
+        background-color:rgb(63, 24, 99);
+        color: white;
+        max-width: 50%
+    }
+</style>

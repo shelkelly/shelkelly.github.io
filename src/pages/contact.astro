@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Bootstrap.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Code by Shelby - Contact Me">
+    <Header subheader="Contact Me" />
+    <div class="container">
+        <form>
+            <div class="row p-3">
+                <label>
+                    <p>Name</p>
+                    <p><input type="text" id="name" name="name" required /></p>
+                </label>
+                <label>
+                    <p>Email</p>
+                    <p>
+                        <input type="email" id="email" name="email" required />
+                    </p>
+                </label>
+
+                <label>
+                    <p>Message</p>
+                    <p>
+                        <textarea id="message" name="message" required
+                        ></textarea>
+                    </p>
+                </label>
+
+                <button class="send">Send</button>
+            </div>
+        </form>
+
+        <style>
+            body {
+                letter-spacing: 2px;
+                margin: 0;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .container {
+                max-height: 100vh;
+                overflow: scroll;
+                overflow-x: hidden;
+                padding-bottom: 20%;
+            }
+
+            .form-floating {
+                color: black;
+            }
+
+            .row{
+                justify-content: center;
+            }
+
+            input {
+                width: 50%;
+            }
+
+            textarea {
+                width: 50%;
+            }
+
+            button {
+                width: 50%;
+            }
+
+            .container::-webkit-scrollbar {
+                opacity: 100%;
+            }
+
+            .container::-webkit-scrollbar-track {
+                opacity: 100%;
+            }
+
+            .container::-webkit-scrollbar-thumb {
+                background: rgb(237, 182, 182);
+                border-radius: 10px;
+                width: 3px;
+            }
+        </style>
+    </div>
+</Layout>
